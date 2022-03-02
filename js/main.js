@@ -12,6 +12,8 @@ let btnPlay = document.querySelector("#play");
 btnPlay.addEventListener("click", function(){
 
     gridContainer.innerHTML = "";
+    gridContainer.classList.add("grid");
+    gridContainer.classList.remove("low", "midium", "high");
 
     let userDifficulty = inputDifficulty.value;
 

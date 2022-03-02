@@ -50,14 +50,17 @@ main{
 
 .low{
     width: calc(50px * 6);
+    height: calc(50px * 6);
 }
 
 .midium{
     width: calc(50px * 8);
+    height: calc(50px * 8);
 }
 
 .high{
     width: calc(50px * 10);
+    height: calc(50px * 10);
 }
 
 .square{
