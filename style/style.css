@@ -40,12 +40,14 @@ main{
 }
 
 .grid{
-    width: 500px;
+    width: calc(50px *10);
 
     margin: 5rem auto;
 
     display: flex;
     flex-wrap: wrap;
+
+    visibility: hidden;
 }
 
 .square{
