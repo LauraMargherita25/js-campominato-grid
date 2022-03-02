@@ -5,32 +5,13 @@ const gridContainer = document.querySelector(".grid");
 let inputDifficulty = document.querySelector("#select_difficulty"); 
 let btnPlay = document.querySelector("#play");
 
-/*for (let i = 1; i <= 100; i++) {
-    
-    const square = document.createElement("div");
-    square.classList.add("square");
-    square.innerHTML = i;
-    gridContainer.append(square);
-}
 
-for (let i = 1; i <= 46; i++) {
-    
-    const square = document.createElement("div");
-    square.classList.add("square");
-    square.innerHTML = i;
-    gridContainer.append(square);
-}
 
-for (let i = 1; i <= 64; i++) {
-    
-    const square = document.createElement("div");
-    square.classList.add("square");
-    square.innerHTML = i;
-    gridContainer.append(square);
-}*/
 
 
 btnPlay.addEventListener("click", function(){
+
+    gridContainer.innerHTML = "";
 
     let userDifficulty = inputDifficulty.value;
 
@@ -73,7 +54,5 @@ btnPlay.addEventListener("click", function(){
             gridContainer.append(square);
         }
 
-    } else {
-        
-    }
+    } 
 })
