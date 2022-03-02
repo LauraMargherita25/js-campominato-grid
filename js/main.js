@@ -3,10 +3,9 @@
 // se seleziono alta compare la griglia 10*10
 const gridContainer = document.querySelector(".grid");
 let inputDifficulty = document.querySelector("#select_difficulty"); 
-let userDifficulty = inputDifficulty.value;
 let btnPlay = document.querySelector("#play");
 
-for (let i = 1; i <= 100; i++) {
+/*for (let i = 1; i <= 100; i++) {
     
     const square = document.createElement("div");
     square.classList.add("square");
@@ -14,15 +13,15 @@ for (let i = 1; i <= 100; i++) {
     gridContainer.append(square);
 }
 
-/*for (let i = 1; i <= 46; i++) {
+for (let i = 1; i <= 46; i++) {
     
     const square = document.createElement("div");
     square.classList.add("square");
     square.innerHTML = i;
     gridContainer.append(square);
-}*/
+}
 
-/*for (let i = 1; i <= 64; i++) {
+for (let i = 1; i <= 64; i++) {
     
     const square = document.createElement("div");
     square.classList.add("square");
@@ -32,10 +31,48 @@ for (let i = 1; i <= 100; i++) {
 
 
 btnPlay.addEventListener("click", function(){
+
+    let userDifficulty = inputDifficulty.value;
+
     if (userDifficulty = "haigh") {
-        // const element = document.getElementById("id");	// Get element
-        // element.style.visibility = "hidden";			// Hide element
-        gridContainer.style.visibility = "visible";			// Show element
-        // const visible = element.style.visibility;		// Get visibility
+
+        gridContainer.classList.add("haigh")
+        gridContainer.style.visibility = "visible";
+
+        for (let i = 1; i <= 100; i++) {
+    
+            const square = document.createElement("div");
+            square.classList.add("square");
+            square.innerHTML = i;
+            gridContainer.append(square);
+        }
+      
+    } else if (userDifficulty = "midium"){
+        
+        for (let i = 1; i <= 64; i++) {
+    
+            const square = document.createElement("div");
+            square.classList.add("square");
+            square.innerHTML = i;
+            gridContainer.append(square);
+        }
+        
+        gridContainer.classList.add("midium")
+        gridContainer.style.visibility = "visible";
+
+
+    } else if (userDifficulty = "low"){
+
+        gridContainer.classList.add("low")
+        gridContainer.style.visibility = "visible";
+
+        for (let i = 1; i <= 46; i++) {
+    
+            const square = document.createElement("div");
+            square.classList.add("square");
+            square.innerHTML = i;
+            gridContainer.append(square);
+        }
+
     }
 })

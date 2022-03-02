@@ -40,14 +40,24 @@ main{
 }
 
 .grid{
-    width: calc(50px *10);
-
     margin: 5rem auto;
 
     display: flex;
     flex-wrap: wrap;
 
     visibility: hidden;
+}
+
+.low{
+    width: calc(50px * 6);
+}
+
+.midium{
+    width: calc(50px * 8);
+}
+
+.haigh{
+    width: calc(50px * 10);
 }
 
 .square{
