@@ -4,3 +4,47 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_left, .header_right{
+    display: flex;
+    align-items: center;
+}
+
+.header_left img{
+    width: 100px;
+}
+
+
+
+
+
+/* main */
+main{
+    display: flex;
+}
+
+.grid{
+    width: 500px;
+
+    margin: 5rem auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid black;
+}
