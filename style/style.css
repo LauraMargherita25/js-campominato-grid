@@ -9,25 +9,32 @@ html{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.main_container{
+    height: 100vh;
+}
 
+.container{
+    width: 1000px;
+    height: 5rem;
 
-
-
-/* header */
-header{
-    margin: 0 1rem;
+    margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
 }
 
+
+
+
+
+/* header */
 .header_left, .header_right{
     display: flex;
     align-items: center;
 }
 
 .header_left img{
-    width: 100px;
+    width: 80px;
 }
 
 
@@ -36,11 +43,15 @@ header{
 
 /* main */
 main{
+    height: calc(100vh - 10rem);
+
+    background-color: aquamarine;
+
     display: flex;
 }
 
 .grid{
-    margin: 5rem auto;
+    margin: auto;
 
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +90,3 @@ main{
 
 
 /* footer */
-footer{
-    margin: 0 1rem;
-}
